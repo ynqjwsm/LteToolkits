@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+      username: sa
+      password:
+      url: jdbc:sqlserver://172.0.8.60:1433;DatabaseName=BSPS
+      initial-size: 5
+  thymeleaf:
+    cache: false
+mybatis-plus:
+  mapper-locations: /mapper/**Mapper.xml
+  type-aliases-package: cn.ctwsm.bsps.entities
+  global-config:
+    id-type: 0
+    field-strategy: 2
+    db-column-underline: true
+    refresh-mapper: true

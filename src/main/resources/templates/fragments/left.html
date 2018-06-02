@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<aside class="main-sidebar" th:fragment="left">
+    <section class="sidebar" style="height: auto;">
+        <ul class="sidebar-menu" data-widget="tree">
+            <li class="header">功能导航</li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-dashboard"></i> <span>仪表盘</span>
+                    <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="/dashboard/main"><i class="fa fa-cubes"></i> 主面板</a></li>
+                    <li><a href="/dashboard/flow"><i class="fa fa-circle-o"></i> 流量仪表盘</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-server"></i> <span>网管指标</span>
+                    <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="/omc/alarm"><i class="fa fa-exchange"></i> 突变指标</a></li>
+                    <li><a href="/omc/query"><i class="fa fa-search"></i> 指标查询</a></li>
+                    <li><a href="/omc/ncheck"><i class="fa fa-search"></i> 邻区检查</a></li>
+                    <li><a href="/omc/statistics"><i class="fa fa-search"></i> 指标突变报表</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-cubes"></i> <span>MR分析</span>
+                    <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="/mr/ctc"><i class="fa fa-search"></i> A-GPS栅格覆盖</a></li>
+                    <li><a href="/mr/dt"><i class="fa fa-search"></i> A-GPS虚拟路测</a></li>
+                    <li><a href="/mr/compare"><i class="fa fa-circle-o"></i> A-GPS异网对标</a></li>
+                    <li><a href="/mr/mod"><i class="fa fa-circle-o"></i> A-GPS Mod干扰分析</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-th"></i> <span>规划建设</span>
+                    <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="/cp/mrPlanningSuggestion"><i class="fa fa-search"></i> MR规划建议</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-map"></i> <span>地理展示</span>
+                    <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="/geo/map"><i class="fa fa-map-pin"></i> 小区地图</a></li>
+                    <li><a href="/geo/traffic"><i class="fa fa-refresh"></i> 流量热力图</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-cog"></i> <span>系统管理</span>
+                    <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="/management/user"><i class="fa fa-users"></i> 用户管理</a></li>
+                    <li><a href="/management/log"><i class="fa fa-history"></i> 操作日志</a></li>
+                    <li><a href="/management/server"><i class="fa fa-server"></i> 服务器状态</a></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+</aside><!-- left end-->
+</body>
+</html>
